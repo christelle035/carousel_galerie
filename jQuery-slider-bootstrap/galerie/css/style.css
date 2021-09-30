@@ -1,0 +1,20 @@
+body { margin: 0; padding: 0; background-color: #333}
+*{ box-sizing: border-box; transition: all 1s ease; font-family: sans-serif;} 
+/* ASTUCE à mettre systématiquement box-sizing Padding/border seront intégrés à l'élément -- transition all  cad tout le css qui va changer*/
+
+.conteneur { width: 1000px; margin: 0 auto; padding: 20px;}
+main { background-color: white; min-height: 500px;}
+header, footer { color: white; min-height: 140px; }
+
+main .conteneur { display: flex; flex-wrap: wrap;} 
+/*wrap: respectent la taille des éléments et fait un retour à la ligne si besoin -- main espace .conteneur = relation parent-enfant mais main.conteneur = main qui a une classe conteneur */
+
+#principal { width: 75%; min-height: 500px; }
+#barre-laterale { width: 25%; min-height: 500px; text-align: right; } 
+/* les images sont traitées comme du texte d'où le text-align*/
+#barre-laterale img { cursor: pointer; }
+
+img { max-width: 100%;} 
+/* ASTUCE à mettre systématiquement max-width: 100% l'image ne peut pas dépasser l'élément qui le  contient top pour le responsive*/
+
+a { text-decoration: none; color: white; font-weight: bold;}
